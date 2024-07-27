@@ -1,8 +1,9 @@
 'use client';
-import clsx from 'clsx';
-import React from 'react';
 
-export interface ButtonProps extends Partial<React.ButtonHTMLAttributes<HTMLButtonElement>> {
+import React from 'react';
+import clsx from 'clsx';
+
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   disabled?: boolean;
 }
 

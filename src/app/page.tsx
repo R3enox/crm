@@ -1,10 +1,12 @@
-import AddCompanyButton from './components/AddCompanyButton';
+'use client';
+import { useEffect } from 'react';
+import Sidebar from './components/Sidebar';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
-  return (
-    <main>
-      <h1 className="text-xl">Home page</h1>
-      <AddCompanyButton />
-    </main>
-  );
+  const router = useRouter();
+  useEffect(() => {
+    router.push('companies');
+  }, [router]);
+  return <main></main>;
 }
